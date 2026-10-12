@@ -1,0 +1,18 @@
+  element.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 匯率換算
+    function convertCurrency() {
+      const krw = document.getElementById('krwInput').value;
+      const hkdResult = document.getElementById('hkdResult');
+      if (krw > 0) {
+        const hkd = (krw / 175).toFixed(1);
+        hkdResult.innerText = 約等於 ${hkd} HKD;
+      } else {
+        hkdResult.innerText = '約等於 0 HKD';
+      }
+    }
+  </script>
+</body>
+</html>
